@@ -36,7 +36,7 @@ $(function() {
 
     // Exercise 6: From the `this` selector, find and change the color of <span>Item 5</span>. The `this` keyword refers to the clicked button
     $("#exercise6Button").on('click', function() {
-      $(this).parent().find('span').css({
+      $(this).parent().children().next().next('div').find('span').css({
         color: 'red'
       })
     });
